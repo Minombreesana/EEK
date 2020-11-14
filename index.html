@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEK</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+    <!-- MOVIMIENTO DE LA CAMARA -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+
+    <!-- LIBRERIAS DE COLISIONES Y FÍSICAS-->
+     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+
+</head>
+<body>
+ <a-scene physics="gravity:0; debug: false">
+
+    <a-entity movement-controls kinematic-body>
+    <a-entity id="camera" camera position="0 3 0" look-controls></a-entity>
+    </a-entity> 
+
+
+    <a-assets>
+      <img id="cielo" src="assets/cielo.png">
+      <img  id="colorluna" src="assets/colorluna-01.jpg">
+      <img id="marte1" src="assets/1.png">
+      <img id="marte2" src="assets/2.png">
+      <img id="marte3" src="assets/3.png">
+      <img id="marte4" src="assets/4.png">
+    </a-assets>
+
+    <a-sky src=#cielo  material="opacity: 0.90; metalness: 0; roughness: 1"></a-sky>
+    <!-- <a-box scale="35 0.1 30" material="color:white; opacity: 0.10; metalness: 0; roughness: 1"> </a-box> -->
+    <a-sphere  src="#colorluna" radius="2" position="0 3 0"></a-sphere>
+    <a-sphere material="color:white; opacity: 0.10; metalness: 0; roughness: 1" radius="10" position=" 0 3 0"></a-sphere>
+
+    <!--PANEL FOTOS MARTE-->
+    <a-box scale="5.189 5.008 0.121" material="color:white; opacity: 0.95; metalness: 0; roughness: 1" rotation="1.035 59.277 -0.146" position="11.281 2.738 9.310"></a-box>
+    <a-image src=#marte1 position="11.967 3.670 7.875" rotation="1.035 59.277 -0.146" scale="1.493 1.493 1.493"></a-image>
+    <a-image src="#marte2" position="11.169 3.670 9.235" rotation="1.035 59.277 -0.146" scale="1.493 1.493 1.493"  ></a-image>
+    <a-image src="#marte3" position="11.156 2.094 9.238" rotation="1.035 59.277 -0.146" scale="1.493 1.493 1.493" ></a-image>
+    <a-image src="#marte4" position="10.354 2.078 10.586" rotation="1.035 59.277 -0.146" scale="1.493 1.493 1.493"></a-image>
+</a-scene>
+</body>
