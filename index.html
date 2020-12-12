@@ -46,11 +46,29 @@
       <img id="cara6" src="assets/6.jpg">
       <img id="cara7" src="assets/7.jpg">
       <img id="cara8" src="assets/8.jpg">
+      <img id="instrucciones" src="assets/instrucciones-01.png">
+      <img id="titulobot" src="assets/TITULOS-02.png">
+      <img id="tituloestacion" src="assets/TITULOS-03.png">
+      <img id="titulomarte" src="assets/TITULOS-04.png">
+      <img id="titulopreguntas" src="assets/TITULOS-05.png">
+      <img id="titulodeseos" src="assets/TITULOS-06.png">
+      <img id="eclipseraro" src="assets/eclipseraro.png">
       <a-asset-item id="humano" src="assets/humano.gltf"></a-asset-item>
       <a-asset-item id="tv" src="assets/TV.gltf"></a-asset-item>
       <video id="poema1" autoplay loop="true" src="assets/muerte.mp4"></video>
       <video id="poema2" autoplay loop="true" src="assets/tiempo.mp4"></video>
-      <audio id="radio" src="assets/audioEEK.aac" autoplay></audio>
+      <video id="pixel1" autoplay loop="true" src="assets/pixel1.mp4"></video>
+      <video id="pixel2" autoplay loop="true" src="assets/pixel2.mp4"></video>
+      <video id="pixel3" autoplay loop="true" src="assets/pixel3.mp4"></video>
+      <video id="pixel4" autoplay loop="true" src="assets/pixel4.mp4"></video>
+      <video id="pixel5" autoplay loop="true" src="assets/pixel5.mp4"></video>
+      <video id="pixel6" autoplay loop="true" src="assets/pixel6.mp4"></video>
+      <video id="pixel7" autoplay loop="true" src="assets/pixel7.mp4"></video>
+      <video id="pixel8" autoplay loop="true" src="assets/pixel8.mp4"></video>
+      <video id="pixel9" autoplay loop="true" src="assets/pixel9.mp4"></video>
+      <video id="pixel10" autoplay loop="true" src="assets/pixel10.mp4"></video>
+      <video id="eclipse" autoplay loop="true" src="assets/eclipse.mp4"></video>
+      <audio id="radio" src="assets/audioEEK.mp3" autoplay></audio>
 
     </a-assets>
 
@@ -77,10 +95,10 @@
     <a-image src=#marte9 position="12.504 2.876 2.687" rotation="0 90 0" scale="1.493 1.493 1.493"></a-image>
     <a-image src=#marte10 position="12.504 2.876 4.379" rotation="0 90 0" scale="1.493 1.493 1.493"></a-image>
 
-    <!--HUMANO INSTRUCCIONES DE USO-->
+    <!--HUMANO INSTRUCCIONES DE USO
     <a-entity gltf-model=#humano position=" -10.394 0.011 -10.082" rotation="2.341 37.872 0.579" scale="0.301 0.301 0.301"></a-entity>
     <a-entity gltf-model=#humano position=" -10.394 0.011 -10.082" rotation="2.341 90 0.579" scale="0.301 0.301 0.301"></a-entity>
-    <a-entity gltf-model=#humano position=" -10.394 0.011 -10.082" rotation="2.341 -53.142 0.579" scale="0.301 0.301 0.301"></a-entity>
+    <a-entity gltf-model=#humano position=" -10.394 0.011 -10.082" rotation="2.341 -53.142 0.579" scale="0.301 0.301 0.301"></a-entity>-->
 
 
     <!--POEMAS-->
@@ -115,10 +133,29 @@
     <a-entity gltf-model=#tv position="11.968 0.281 -3.440" rotation="0 180 0" scale="0.231 0.231 0.231"></a-entity>
     <a-image src=#cara8 position="11.902 3.591 -3.440" rotation="0 90 0" scale="2.987 1.643 1"></a-image>
 
-    
+    <!--PIXELES-->
 
-   
-    <!--AUDIO-->
-    <!--<a-sound src="#radio" position="8.264 13.276 71.108"></a-sound>-->
+    <a-video src="#pixel1"  position="-14.628 3 0.922" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel10"  position="-14.628 3 -1.077" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel3"  position="-14.628 3 -3.068" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel4"  position="-14.628 4.214 0.922" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel5"  position="-14.628 4.214 -1.077" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel6"  position="-14.628 4.214 -3.068" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel2"  position="-14.628 1.777 0.922" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel8"  position="-14.628 1.777 -1.077" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    <a-video src="#pixel9"  position="-14.628 1.777 -3.068" rotation="0 90 0" scale="2..081 1.224 1.224"></a-video>
+    
+    <!--ECLIPSE-->
+
+    <a-video src=#eclipse position="-12.014 2.887 -13.186" scale="6.912 3.84 3.84"  rotation="0 45 0"></a-video>
+    <a-image src=#eclipseraro position="-14.272 4.495 -9.582" rotation="0 90 0" scale="2.034 0.581 0.581"></a-image>
+    
+    <!--TEXTOS-->
+ <a-image src=#instrucciones position="0 3.5 -1.387" scale="1.514 1 1"></a-image>
+ <a-image src="#titulobot" position="-3.242 3.101 -15.238" scale="3 1 1"></a-image>
+ <a-image src="#titulomarte" position="1.127 3 11.520" scale="3 1 1" rotation="0 180 0"></a-image>
+ <a-image src="#titulopreguntas" position="-7.783 3 7.109" scale="3 1 1" rotation="0 180 0"></a-image>
+ <a-image src="#titulodeseos" position="-14.628 3 -6.091" scale="3 1 1" rotation="0 90 0"></a-image>
+ <a-image src="#tituloestacion" position="-7.861 3 -15.451" scale="3 1 1" rotation="0 0 0"></a-image>
   </a-scene>
 </body>
